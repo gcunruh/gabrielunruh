@@ -1,143 +1,48 @@
-<script context="module">
-  export async function load({ fetch }) {
-    const res = await fetch('https://api.spacex.land/graphql', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        query: `{
-            launchesPast(limit: 10) {
-                mission_name
-                launch_date_local
-                links {
-                    video_link
-                }
-            }
-        }`
-      })
-    });
-
-    if (res.ok) {
-      const { data } = await res.json();
-      return {
-        props: {
-          launches: data.launchesPast
-        }
-      };
-    }
-
-    return {
-      status: res.status,
-      error: new Error(`Error fetching GraphQL data`)
-    };
-  }
-</script>
-
 <script>
-  export let launches;
+  let bg = 'bg-yellow-100';
 </script>
 
-<h1>SpaceX Launches</h1>
-<p>
-  This is an example <a
-    class="link"
-    target="_blank"
-    rel="noopener"
-    href="https://svelte.dev">SvelteKit</a
-  >
-  application fetching GraphQL data from the public
-  <a
-    class="link"
-    target="_blank"
-    rel="noopener"
-    href="https://api.spacex.land/graphql">SpaceX API</a
-  >. View source on
-  <a
-    class="link"
-    target="_blank"
-    rel="noopener"
-    href="https://github.com/leerob/sveltekit-graphql">GitHub</a
-  >.
-</p>
-<ul>
-  {#each launches as launch}
-    <li>
-      <a
-        class="card-link"
-        target="_blank"
-        rel="noopener"
-        href={launch.links.video_link}
-      >
-        <h2>{launch.mission_name}</h2>
-        <p>{new Date(launch.launch_date_local).toLocaleString()}</p>
-      </a>
-    </li>
-  {/each}
-</ul>
-<footer>
-  <p>
-    Created with <a
-      class="link"
-      target="_blank"
-      rel="noopener"
-      href="https://svelte.dev">SvelteKit</a
-    >
-    and deployed with
-    <a class="link" target="_blank" rel="noopener" href="https://vercel.com"
-      >▲ Vercel</a
-    >.
-  </p>
-</footer>
-
-<style>
-  :global(body) {
-    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
-      monospace;
-    background-color: #fafafa;
-    max-width: 650px;
-    margin: 32px auto;
-    padding: 0 16px;
-  }
-  h1 {
-    letter-spacing: -0.025em;
-  }
-  h2 {
-    font-size: 18px;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 32px;
-  }
-  li {
-    border: 1px solid #eaeaea;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    background-color: white;
-    transition: 0.15s box-shadow ease-in-out;
-  }
-  li:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-  }
-  p {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.75;
-  }
-  a {
-    color: #0070f3;
-    text-decoration: none;
-  }
-  .card-link {
-    padding: 8px 24px;
-    display: block;
-  }
-  .link {
-    transition: 0.15s text-decoration ease-in-out;
-    color: #0761d1;
-  }
-  .link:hover {
-    text-decoration: underline;
-  }
-</style>
+<div class="h-screen {bg}">
+  <div class="container mx-auto px-4 ">
+    <div class="flex justify-end">
+      <span class="my-2 z-0 inline-flex shadow-sm rounded-md">
+        <button
+          type="button"
+          on:click={() => (bg = 'bg-yellow-100')}
+          class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+        >
+          Classic
+        </button>
+        <button
+          type="button"
+          on:click={() => (bg = 'bg-black')}
+          class="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+        >
+          Contemporary
+        </button>
+        <button
+          type="button"
+          on:click={() => (bg = 'bg-white')}
+          class="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+        >
+          Minimalist
+        </button>
+      </span>
+    </div>
+    <img
+      class="w-full my-5"
+      alt="a painting with frame"
+      src={bg === 'bg-yellow-100'
+        ? './lone-classic.png'
+        : bg === 'bg-white'
+        ? './lone-min.png'
+        : bg === 'bg-black'
+        ? './lone-con.png'
+        : ''}
+    />
+    <div class="bg-white w-40 shadow-sm">
+      <h1>The Lone Minstral</h1>
+      <h2>oil on canvas</h2>
+    </div>
+  </div>
+</div>
