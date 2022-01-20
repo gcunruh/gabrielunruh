@@ -4,7 +4,7 @@
 
 <div class="h-full w-full {bg}">
   <div class="w-full md:w-3/4 lg:w-1/2 xl:w-1/3 mx-auto">
-    <div class="px-4 pt-4">
+    <div class="px-4 pt-3">
       <span class="my-2 z-0 inline-flex shadow-sm rounded-md">
         <button
           type="button"
@@ -31,7 +31,7 @@
         </button>
       </span>
     </div>
-    <div class="my-8 flex flex-col md:flex-row">
+    <div class="my-3 flex flex-col md:flex-row">
       <div class="px-4">
         <img
           class="w-full"
@@ -44,7 +44,7 @@
             ? './lone-con.png'
             : ''}
         />
-        <div class="my-4 relative text-left">
+        <div class="my-5 relative text-left">
           <img
             class="h-28 md:h-40 drop-shadow-md"
             alt="A plaque with a painting"
