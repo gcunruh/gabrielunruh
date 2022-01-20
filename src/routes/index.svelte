@@ -1,5 +1,5 @@
 <script>
-  let bg = 'bg-amber-50';
+  let bg = 'bg-amber-100';
 </script>
 
 <div class="h-full w-full {bg}">
@@ -8,7 +8,7 @@
       <span class="my-2 z-0 inline-flex shadow-sm rounded-md">
         <button
           type="button"
-          on:click={() => (bg = 'bg-amber-50')}
+          on:click={() => (bg = 'bg-amber-100')}
           class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500"
         >
           Classic
@@ -36,7 +36,7 @@
         <img
           class="w-full"
           alt="a painting with frame"
-          src={bg === 'bg-amber-50'
+          src={bg === 'bg-amber-100'
             ? './lone-classic.png'
             : bg === 'bg-gray-100'
             ? './lone-min.png'
