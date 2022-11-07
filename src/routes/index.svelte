@@ -55,7 +55,7 @@
       />
     </div>
     <div class="text-xl md:text-5xl font-semibold">
-      Technology leader at the intersection of technology and governance
+      Leader at the intersection of technology and governance
     </div>
     <div class="text-gray-300 my-4 text-md leading-7">
       I'm Gabriel, an executive & engineer located in Austin, TX. As a believer
