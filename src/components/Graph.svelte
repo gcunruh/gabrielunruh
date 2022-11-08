@@ -53,13 +53,13 @@
         >
           2022
         </div>
-        <div
+        <!-- <div
           class={`rounded-full ${
             year === '2021' ? 'bg-[#161b22]' : 'bg-black'
           }  px-8 py-1 text-sm`}
         >
           2021
-        </div>
+        </div> -->
       </div>
       <div class="mt-1 md:mt-0">
         <div class="flex flex-row md:flex-col">
