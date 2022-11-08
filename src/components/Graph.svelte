@@ -72,7 +72,7 @@
     const res = await fetch('https://api.github.com/graphql', {
       method: 'POST',
       headers: new Headers({
-        Authorization: 'Bearer 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',
+        Authorization: 'Bearer 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',
         'Content-Type': 'application/json'
       }),
       body: JSON.stringify({
