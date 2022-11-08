@@ -45,7 +45,7 @@
   export let graph;
 </script>
 
-<div class="h-screen w-fit bg-black p-4 md:p-16">
+<div class="h-screen w-fit bg-black px-4 md:px-16 mb-16">
   <div class="flex flex-col text-white">
     <div>
       <img
@@ -54,7 +54,7 @@
         class="my-7 rounded-full h-20 w-20"
       />
     </div>
-    <div class="text-xl md:text-5xl font-semibold">
+    <div class="text-2xl md:text-5xl font-semibold">
       Leader at the intersection of technology and governance
     </div>
     <div class="text-gray-300 my-4 text-md leading-7">
@@ -63,10 +63,18 @@
       about technology and increase the quality of our craftsmanship in the
       process.
     </div>
+    <div class="text-xl font-semibold mt-2 mb-1">
+    My Professional Values
+    </div>
+    <ul class="mb-4 text-gray-300 leading-7">
+      <li>Mutual Respect</li>
+      <li>Continual Growth</li>
+      <li>Exceptional Craftsmanship</li>
+    </ul>
     <div class="flex flex-row gap-6 my-4">
-      <a href="https://twitter.com/firstwonk">
+      <a href="https://twitter.com/firstwonk" class="text-gray-300 hover:text-white">
         <svg
-          class="h-6 w-6 text-gray-300"
+          class="h-6 w-6"
           viewBox="0 0 48 48"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -83,11 +91,11 @@
           </defs>
         </svg>
       </a>
-      <a href="https://www.instagram.com/gcunruh">
+      <a href="https://www.instagram.com/gcunruh" class="text-gray-300 hover:text-white">
         <svg
           viewBox="0 0 48 48"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-gray-300"
+          class="h-6 w-6"
         >
           <g clipPath="url(#clip0_17_63)">
             <path
@@ -110,9 +118,9 @@
           </defs>
         </svg>
       </a>
-      <a href="https://www.linkedin.com/in/gcunruh/">
+      <a href="https://www.linkedin.com/in/gcunruh/" class="text-gray-300 hover:text-white">
         <svg
-          class="h-6 w-6 fill-white text-gray-300"
+          class="h-6 w-6"
           viewBox="0 0 48 48"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -129,10 +137,10 @@
           </defs>
         </svg>
       </a>
-      <a href="https://github.com/gcunruh">
+      <a href="https://github.com/gcunruh" class="text-gray-300 hover:text-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-gray-300"
+          class="h-6 w-6"
           viewBox="0 0 24 24"
           ><path
             fill="currentColor"
