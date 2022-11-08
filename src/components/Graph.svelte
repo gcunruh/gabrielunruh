@@ -12,7 +12,7 @@
     const res = await fetch('https://api.github.com/graphql', {
       method: 'POST',
       headers: new Headers({
-        Authorization: 'Bearer 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',
+        Authorization: `Bearer ${import.meta.env.VITE_GAT}`,
         'Content-Type': 'application/json'
       }),
       body: JSON.stringify({
@@ -72,7 +72,7 @@
     const res = await fetch('https://api.github.com/graphql', {
       method: 'POST',
       headers: new Headers({
-        Authorization: 'Bearer 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',
+        Authorization: `Bearer ${import.meta.env.VITE_GAT}`,
         'Content-Type': 'application/json'
       }),
       body: JSON.stringify({
