@@ -115,7 +115,7 @@
           <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
             <div>
               <p class="text-xs md:text-sm text-white">
-                Corporate Strategy and Analysis - <a class="text-amber-500" href="https://docgo.com/">DocGo</a> (Formerly Ambulnz)
+                Head of Corporate Strategy and Analysis - <a class="text-amber-500" href="https://docgo.com/">DocGo</a> (Formerly Ambulnz)
               </p>
             </div>
             <div class="whitespace-nowrap text-right text-xs md:text-sm text-white">

@@ -1,48 +1,5 @@
-<script context="module">
-  export async function load({ fetch }) {
-    const res = await fetch('https://api.github.com/graphql', {
-      method: 'POST',
-      headers: new Headers({
-        Authorization: 'Bearer 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',
-        'Content-Type': 'application/json'
-      }),
-      body: JSON.stringify({
-        query: `
-            query($userName:String!) { 
-              user(login: $userName){
-                contributionsCollection(from: "2022-01-01T00:00:00.000Z") {
-                  contributionCalendar {
-                    totalContributions
-                    weeks {
-                      contributionDays {
-                        color
-                        contributionLevel
-                        contributionCount
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          `,
-        variables: {
-          userName: 'gcunruh'
-        }
-      })
-    });
-    if (res.ok) {
-      const graph = await res.json();
-      return {
-        props: { graph }
-      };
-    }
-  }
-</script>
-
 <script>
   import Graph from '../components/Graph.svelte';
-  export let graph;
 </script>
 
 <div class="h-screen w-fit bg-black px-4 md:px-16 mb-16">
@@ -150,5 +107,5 @@
       </a>
     </div>
   </div>
-  <Graph graph={graph.data.user.contributionsCollection.contributionCalendar} year={"2022"} />
+  <Graph />
 </div>

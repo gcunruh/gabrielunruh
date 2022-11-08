@@ -1,4 +1,4 @@
-<div class="h-screen bg-black px-4 md:px-16 mb-16 text-white overflow-hidden relative w-full">
+<div class="h-screen bg-black px-4 md:px-16 mb-16 text-white w-full">
     <div class="text-2xl md:text-5xl font-semibold mt-14">
       Becoming a Swiss Army Knife
     </div>
