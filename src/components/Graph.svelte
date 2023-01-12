@@ -6,7 +6,7 @@
 <script>
   import { onMount } from 'svelte';
   let graph;
-  let year = '2022';
+  let year = '2023';
 
   onMount(async () => {
     const res = await fetch('https://api.github.com/graphql', {
@@ -158,6 +158,14 @@
     </div>
     <div class="flex flex-row-reverse">
       <div class="flex flex-col ml-5 gap-2">
+        <div
+          on:click={() => rerunQuery('2023')}
+          class={`rounded-full ${
+            year === '2023' ? 'bg-[#161b22]' : 'bg-black'
+          }  px-8 py-1 text-sm cursor-pointer`}
+        >
+          2023
+        </div>
         <div
           on:click={() => rerunQuery('2022')}
           class={`rounded-full ${
