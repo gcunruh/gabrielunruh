@@ -15,13 +15,13 @@
       Futurist & Digital Transformation Leader
     </div>
     <div class="text-gray-300 my-4 text-md leading-7">
-      I'm Gabriel, a digital transformation leader and software engineer located in Austin, TX. I believe that clear business strategy and remarkable engineering can change the world!
+      I'm Gabriel, a cross-functional technology leader located in Austin, TX. I believe that clear business strategy and remarkable engineering can change the world!
     </div>
     <div class="text-xl font-semibold mt-2 mb-1">
     My Professional Values
     </div>
     <ul class="mb-4 text-gray-300 leading-7">
-      <li>Mutual Respect</li>
+      <li>Collaboration</li>
       <li>Continual Growth</li>
       <li>Exceptional Craftsmanship</li>
     </ul>

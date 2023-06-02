@@ -15,7 +15,7 @@
           </div>
           <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
             <div>
-              <p class="text-xs md:text-sm text-white">Founded <a class="text-amber-500" href="https://divination.dev">Divination</a> </p>
+              <p class="text-xs md:text-sm text-white">Founded <a class="text-amber-500" href="https://divination.dev">Divination</a>  (<a href="/products" class="text-amber-500 hover:underline">check out all the cool stuff we've built</a>)</p>
             </div>
             <div class="whitespace-nowrap text-right text-xs md:text-sm text-white">
               <time datetime="2022">2022</time>
@@ -24,7 +24,7 @@
         </div>
       </div>
     </li>
-    <li>
+    <!-- <li>
       <div class="relative pb-8">
         <span
           class="absolute top-10 left-4 -ml-px h-full max-h-[21.33px] w-0.5 bg-gray-700"
@@ -47,7 +47,7 @@
           </div>
         </div>
       </div>
-    </li>
+    </li> -->
     <li>
       <div class="relative pb-8">
         <span
@@ -63,7 +63,7 @@
           </div>
           <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
             <div>
-              <p class="text-xs md:text-sm text-white">Co-Founded <a class="text-amber-500" href="https://apps.apple.com/us/app/the-streaming-guide/id1562107506">The Streaming Guide</a></p>
+              <p class="text-xs md:text-sm text-white">Co-Founded <a class="text-amber-500" href="https://vale.network">Vale</a> (<a href="/products" class="text-amber-500 hover:underline">check out all the cool stuff we built</a>)</p>
             </div>
             <div class="whitespace-nowrap text-right text-xs md:text-sm text-white">
               <time datetime="2019">2019</time>
@@ -142,7 +142,7 @@
           <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
             <div>
               <p class="text-xs md:text-sm text-white">
-                B.A. International Relations and Economics - American University
+                B.A. International Studies and Economics - American University
               </p>
             </div>
             <div class="whitespace-nowrap text-right text-xs md:text-sm text-white">
@@ -174,6 +174,56 @@
             </div>
             <div class="whitespace-nowrap text-right text-xs md:text-sm text-white">
               <time datetime="2016">2016</time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="relative pb-8">
+        <span
+          class="absolute top-10 left-4 -ml-px h-1/3 max-h-[21.33px] w-0.5 bg-gray-700"
+          aria-hidden="true"
+        />
+        <div class="relative flex space-x-3">
+          <div>
+            <span
+              class="h-8 w-8 rounded-full bg-amber-500/50 flex items-center justify-center ring-8 ring-black"
+            >
+            </span>
+          </div>
+          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+            <div>
+              <p class="text-xs md:text-sm text-white">Undergraduate Researcher (<a href="/products" class="text-amber-500 hover:underline">check out some of my papers</a>)</p>
+            </div>
+            <div class="whitespace-nowrap text-right text-xs md:text-sm text-white">
+              <time datetime="2014">2014-2017</time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="relative pb-8">
+        <span
+          class="absolute top-10 left-4 -ml-px h-1/3 max-h-[21.33px] w-0.5 bg-gray-700"
+          aria-hidden="true"
+        />
+        <div class="relative flex space-x-3">
+          <div>
+            <span
+              class="h-8 w-8 rounded-full bg-amber-500/50 flex items-center justify-center ring-8 ring-black"
+            >
+            </span>
+          </div>
+          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+            <div>
+              <p class="text-xs md:text-sm text-white">Product & Ops Intern - Lexmark</p>
+            </div>
+            <div class="whitespace-nowrap text-right text-xs md:text-sm text-white">
+              <time datetime="2014">2015</time>
             </div>
           </div>
         </div>
